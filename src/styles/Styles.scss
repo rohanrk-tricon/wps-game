@@ -1,0 +1,10 @@
+$bgcolor: rgb(43, 188, 236);
+$textcolor: rgb(245, 11, 11);
+$fontsize: 18px;
+
+
+.body {
+    background-color: $bgcolor;
+    color: $textcolor;
+    font-size: $fontsize;
+  }
