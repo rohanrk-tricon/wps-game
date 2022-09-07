@@ -6,6 +6,7 @@ const compilerOptions = require('../../tsconfig.json').compilerOptions;
 const stringfyTranslationObjects = require('./stringfyTranslations.js');
 
 module.exports = {
+  react: { useSuspense: false },
   input: [
     'src/app/**/**.{ts,tsx}',
     '!**/node_modules/**',

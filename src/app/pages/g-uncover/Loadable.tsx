@@ -4,7 +4,7 @@
 
 import { lazyLoad } from 'utils/loadable';
 
-export const LoginPage = lazyLoad(
-  () => import('./index'),
-  module => module.LoginPage,
+export const Guncover = lazyLoad(
+  () => import('./Guncover'),
+  module => module.Guncover,
 );

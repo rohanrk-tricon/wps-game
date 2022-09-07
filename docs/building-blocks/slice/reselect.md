@@ -45,7 +45,7 @@ import React, { useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { selectUsername } from './slice/selectors';
 
-export function HomePage() {
+export function LoginPage() {
   // Type of the `username` will be inferred  ✅
   const username = useSelector(selectUsername);
   // ...

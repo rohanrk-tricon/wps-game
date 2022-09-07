@@ -31,4 +31,4 @@ function fileIsInStartingTemplate(file: string) {
 
 const pathInTemplate = (file: string) => `internals/startingTemplate/${file}`;
 
-verifyStartingTemplateChanges();
+// verifyStartingTemplateChanges();

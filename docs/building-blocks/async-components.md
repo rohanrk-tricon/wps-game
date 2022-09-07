@@ -9,9 +9,9 @@ This is the content of the file by default:
 ```ts
 import { lazyLoad } from 'utils/loadable';
 
-export const HomePage = lazyLoad(
+export const LoginPage = lazyLoad(
   () => import('./index'),
-  module => module.HomePage, // Select your exported HomePage function for lazy loading
+  module => module.LoginPage, // Select your exported LoginPage function for lazy loading
 );
 ```
 
@@ -21,9 +21,9 @@ In this case, the app won't show anything while loading your component. You can,
 import React from 'react';
 import { lazyLoad } from 'utils/loadable';
 
-export const HomePage = lazyLoad(
+export const LoginPage = lazyLoad(
   () => import('./index'),
-  module => module.HomePage,
+  module => module.LoginPage,
   {
     fallback: <div>Loading...</div>,
   },

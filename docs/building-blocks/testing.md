@@ -44,7 +44,7 @@ It might be used in another component like this:
 ```tsx
 import Button from './Button';
 
-function HomePage() {
+function LoginPage() {
   return <Button onClick={this.doSomething}>Click me!</Button>;
 }
 ```

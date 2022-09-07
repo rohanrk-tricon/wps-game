@@ -62,7 +62,7 @@ describe('extracting messages', () => {
 
   it('extract strings in react components', () => {
     const content = `
-    export function HomePage() {
+    export function LoginPage() {
       return (
         <div>
           <span>{t('a.k1')}</span>

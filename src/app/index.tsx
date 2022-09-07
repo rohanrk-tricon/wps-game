@@ -10,13 +10,11 @@ import * as React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Route, BrowserRouter, Routes } from 'react-router-dom';
 
-import { GlobalStyle } from 'styles/global-styles';
-
-import { HomePage } from './pages/HomePage/Loadable';
-import { NotFoundPage } from './components/NotFoundPage/Loadable';
+import { LoginPage } from './pages/home-page/Loadable';
+import { NotFoundPage } from './components/not-found-page/Loadable';
 import { useTranslation } from 'react-i18next';
-import { GameOne } from './pages/game-one/Loadable';
-import ApiTest from './pages/api-test/ApiTest';
+import { Guncover } from './pages/g-uncover/Guncover';
+
 import '../interceptor';
 
 export function App() {
@@ -32,12 +30,10 @@ export function App() {
       </Helmet>
 
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/game" element={<GameOne />} />
-        <Route path="/api" element={<ApiTest />} />
+        <Route path="/" element={<LoginPage />} />
+        <Route path="/game" element={<Guncover />} />
         <Route element={<NotFoundPage />} />
       </Routes>
-      <GlobalStyle />
     </BrowserRouter>
   );
 }

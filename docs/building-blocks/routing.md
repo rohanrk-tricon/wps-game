@@ -11,7 +11,7 @@ There is a detailed explanation for this decision [here](https://reacttraining.c
 To add a new route, simply import the `Route` component and use it standalone or inside the `Switch` component (all part of [RR5 API](https://reacttraining.com/react-router/web/api)):
 
 ```ts
-<Route exact path="/" component={HomePage} />
+<Route exact path="/" component={LoginPage} />
 ```
 
 Top level routes are located in `src/app/index.tsx`.

@@ -109,7 +109,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { useHomepageSlice } from './slice';
 import { selectUsername } from './slice/selectors';
 
-export function HomePage() {
+export function LoginPage() {
   // Use the slice we created
   const { actions } = useHomepageSlice();
 
